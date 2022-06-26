@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" id="theme-link">
+    <title>DOT-NET</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container container__header">
+            <div class="header__left">
+                <button class="header__left_btn">
+                    <object type="image/svg+xml" data="images/DOT-NOTE new logo Trancparent with dark 2.svg">
+                        <img src="images/DOT-NOTE new logo Trancparent with dark 2.png" alt="image format png"/>
+                    </object>
+                </button>
+                <h3 class="header__left_title">DOT-NET<span class="header__left_text">Digital Online Topics</span></h3>
+                <h4 class="header__left_link">About Us</h4>
+            </div>
+            <h1 class="header__title">Homepage</h1>
+            <div class="header__right">
+                  <form action="" class="header__form">
+                    <button class="header__form_btn" type="submit"><img class="header__form_img" src="images/Group 2.png" alt=""></button>
+                    <input class="header__form_input" type="text" placeholder="Искать здесь...">
+                  </form>
+                  <button onclick="document.getElementById('id01').style.display = 'block'" class="header__login">Log in</button>
+                  <button class="header__register">Register</button>
+                  <button id="theme-button" class="header__register">
+                      <!-- <object data="images/icons8-sun.svg" type="image/svg+xml"></object> -->
+                  </button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <h1 class="header__title mini__homepage">Homepage</h1>
+                    <li class="menu-items_item"><h4 class="header__left_link mini__about-us">About Us</h4></li>
+                    <li class="menu-items_item"><form action="" class="header__form">
+                        <button class="header__form_btn" type="submit"><img class="header__form_img" src="images/Group 2.png" alt=""></button>
+                        <input class="header__form_input mini__input" type="text" placeholder="Искать здесь...">
+                      </form></li>
+                    <li class="menu-items_item"><button onclick="document.getElementById('id01').style.display = 'block'" class="header__login">Log in</button></li>
+                    <li class="menu-items_item"><button class="header__register">Register</button></li>
+                    <li class="menu-items_item"><button id="theme-btn" class="header__register">White</button></li>
+                </ul>
+                <h1 class="header__title">Homepage</h1>
+                <div class="header__left">
+                    <button id="btn__onclick" class="header__left_btn">
+                        <object  type="image/svg+xml" data="images/DOT-NOTE new logo Trancparent with dark 2.svg">
+                            <img src="images/DOT-NOTE new logo Trancparent with dark 2.png" alt="image format png"/>
+                        </object>
+                    </button>
+                    <h3 class="header__left_title">DOT-NET<span class="header__left_text">Digital Online Topics</span></h3>
+                    <h4 class="header__left_link">About Us</h4>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+          
+            <!-- Modal Content -->
+            <div class="modal-container" id="container-modal">
+                <form class="modal-content animate" action="">
+                    <h3 class="modal-content__title">Login</h3>
+                    <label for="uname"><b>Username or e-mail</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="psw"><b>Password:</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <div class="modal-content__links">
+                        <a href="#">Forgot password?</a>
+                        <a href="#">Registration</a>
+                    </div>
+                    <div class="modal-content__btns">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="section__image">
+            <div class="container container__image">
+                <img src="images/DOT-NET Illustration white line.png" alt="logo_image" class="section__image_img">
+            </div>
+        </div>
+        <div class="section__partners">
+            <div class="container">
+                <h2 class="section__partners_title">Our partners</h2>
+                <ul class="section__partners_list">
+                    <li class="section__partners_item">
+                        <a href="">
+                            <div class="section__partners_block">
+                                <img class="section__partners_img" src="images/27067430_573826116287432_7183152738024944369_n 1.png" alt="partners__image">
+                                <h5 class="partners__block_title">Сеть гипермаркетов “Фрунзе”</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__partners_item">
+                        <a href="">
+                            <div class="section__partners_block">
+                                <img class="section__partners_img" src="images/27067430_573826116287432_7183152738024944369_n 1.png" alt="partners__image">
+                                <h5 class="partners__block_title">*Name*</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__partners_item">
+                        <a href="">
+                            <div class="section__partners_block">
+                                <img class="section__partners_img" src="images/27067430_573826116287432_7183152738024944369_n 1.png" alt="partners__image">
+                                <h5 class="partners__block_title">*Name*</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__partners_item">
+                        <a href="">
+                            <div class="section__partners_block">
+                                <img class="section__partners_img" src="images/27067430_573826116287432_7183152738024944369_n 1.png" alt="partners__image">
+                                <h5 class="partners__block_title">*Name*</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__partners_item">
+                        <a href="">
+                            <div class="section__partners_block">
+                                <img class="section__partners_img" src="images/27067430_573826116287432_7183152738024944369_n 1.png" alt="partners__image">
+                                <h5 class="partners__block_title">*Name*</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__partners_item">
+                        <a href="">
+                            <div class="section__partners_block">
+                                <img class="section__partners_img" src="images/27067430_573826116287432_7183152738024944369_n 1.png" alt="partners__image">
+                                <h5 class="partners__block_title">*Name*</h5>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section__topics">
+            <div class="container">
+                <h2 class="section__topics_title">Top topics</h2>
+                <ul class="section__topics_list">
+                    <li class="section__topics_item">
+                        <a href="">
+                            <div class="section__topics_block">
+                                <h4 class="topics__block_title">*Name of Topic*</h4>
+                                <p class="topics__block_text">Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__topics_item">
+                        <a href="">
+                            <div class="section__topics_block">
+                                <h4 class="topics__block_title">*Name of Topic*</h4>
+                                <p class="topics__block_text">Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__topics_item">
+                        <a href="">
+                            <div class="section__topics_block">
+                                <h4 class="topics__block_title">*Name of Topic*</h4>
+                                <p class="topics__block_text">Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__topics_item">
+                        <a href="">
+                            <div class="section__topics_block">
+                                <h4 class="topics__block_title">*Name of Topic*</h4>
+                                <p class="topics__block_text">Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__topics_item">
+                        <a href="">
+                            <div class="section__topics_block">
+                                <h4 class="topics__block_title">*Name of Topic*</h4>
+                                <p class="topics__block_text">Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section__topics_item">
+                        <a href="">
+                            <div class="section__topics_block">
+                                <h4 class="topics__block_title">*Name of Topic*</h4>
+                                <p class="topics__block_text">Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. Abstract. Preview
+                                Not a sick explanation of the topic. </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

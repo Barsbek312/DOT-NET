@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oswald&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Montserrat+Alternates&family=Oswald:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #1E1F20;
+  border-bottom: 3px #C8DBE8 solid;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left_title {
+  font-size: 34px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header__left_text {
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  margin-top: -10px;
+}
+
+.header__left_link {
+  padding-left: 20px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 21%;
+}
+
+.header__right_title {
+  color: #fff;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.header__register {
+  width: 90px;
+  height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  border-radius: 9px;
+  border: 2px solid #C8DBE8;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header__register:hover {
+  border: 2px solid #ff9900;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 427px) {
+  .header__left > object {
+    display: none;
+  }
+}
+/*# sourceMappingURL=dark-css.css.map */

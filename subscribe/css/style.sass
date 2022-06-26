@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oswald&family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Montserrat+Alternates&family=Oswald:wght@300&display=swap')
+
+$main_text: 'Oswald', sans-serif
+$common_text: 'Open Sans', sans-serif
+$white: #fff
+$color_block: #dee6ed
+$color_dedicated: #939eae
+$color_text: #464a4e
+$color_special: #ff9900
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style: none
+
+html, body
+    height: 100%
+    width: 100%
+
+.container
+    max-width: 1300px
+    padding-left: 20px
+    padding-right: 20px
+    margin: 0 auto
+
+// header
+
+.header
+    background: $color_block
+    border-bottom: 3px $color_dedicated solid
+    position: fixed
+    width: 100%
+    padding: 10px 0
+
+.container__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.header__left
+    display: flex
+    align-items: center
+
+.header__left_title
+    font-size: 34px
+    color: $color_text
+    font-family: $main_text
+    padding-left: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.header__left_text
+    font-size: 14px
+    font-family: $main_text
+    margin-top: -10px
+
+.header__left_link
+    padding-left: 20px
+    color: $color_text
+    font-family: $main_text
+    cursor: pointer
+    font-size: 24px
+    font-weight: 300
+
+.header__right
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 21%
+
+.header__right_title
+    color: $color_text
+    font-size: 22px
+    font-family: $main_text
+    font-weight: 300
+
+.header__register
+    width: 90px
+    height: 40px
+    font-family: $main_text
+    font-size: 24px
+    border-radius: 9px
+    border: 2px solid $color_dedicated
+    background: transparent
+    cursor: pointer
+    color: $color_text
+    &:hover
+        border: 2px solid $color_special
+        transition: 0.3s
+
+@media screen and (max-width: 427px)
+    .header__left > object
+        display: none
+
+// main
+
+.main
+    padding-top: 7em 
+    min-height: 100%
+
+.container__main
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    min-height: 100%
+
+.payment__options
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.main__title
+    font-family: $main_text
+    font-weight: 400
+    font-size: 70px
+    color: $color_text
+
+.payment__options_list
+    display: flex
+    padding-top: 30px
+
+.payment__options_item
+    margin-right: 40px
+    &:last-child
+        margin-right: 0
+
+.payment__options_block
+    border: 2px solid $color_special
+    border-radius: 65px
+
+
+

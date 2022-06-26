@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oswald&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Montserrat+Alternates&family=Oswald:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #dee6ed;
+  border-bottom: 3px #939eae solid;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left_title {
+  font-size: 34px;
+  color: #464a4e;
+  font-family: "Oswald", sans-serif;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header__left_text {
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  margin-top: -10px;
+}
+
+.header__left_link {
+  padding-left: 20px;
+  color: #464a4e;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 21%;
+}
+
+.header__right_title {
+  color: #464a4e;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.header__register {
+  width: 90px;
+  height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  border-radius: 9px;
+  border: 2px solid #939eae;
+  background: transparent;
+  cursor: pointer;
+  color: #464a4e;
+}
+
+.header__register:hover {
+  border: 2px solid #ff9900;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 427px) {
+  .header__left > object {
+    display: none;
+  }
+}
+
+.main {
+  padding-top: 7em;
+  min-height: 100%;
+}
+
+.container__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100%;
+}
+
+.payment__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  color: #464a4e;
+}
+
+.payment__options_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+.payment__options_item {
+  margin-right: 40px;
+}
+
+.payment__options_item:last-child {
+  margin-right: 0;
+}
+
+.payment__options_block {
+  border: 2px solid #ff9900;
+  border-radius: 65px;
+}
+/*# sourceMappingURL=style.css.map */
