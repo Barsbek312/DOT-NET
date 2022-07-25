@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oswald&family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Montserrat+Alternates&family=Oswald:wght@300&display=swap')
+
+$main_text: 'Oswald', sans-serif
+$common_text: 'Open Sans', sans-serif
+$white: #fff
+$color_block: #dee6ed
+$color_dedicated: #939eae
+$color_text: #464a4e
+$color_special: #ff9900
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+
+html,body
+    min-height: 100%
+    width: 100%
+
+.container
+    max-width: 1300px
+    padding-left: 20px
+    padding-right: 20px
+    margin: 0 auto
+
+// header
+
+.header
+    background: $color_block
+    border-bottom: 3px $color_dedicated solid
+    position: fixed
+    width: 100%
+    padding: 10px 0
+    
+
+.container__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.header__left
+    display: flex
+    align-items: center
+
+.header__left_title
+    font-size: 34px
+    color: $color_text
+    font-family: $main_text
+    padding-left: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.header__left_text
+    font-size: 14px
+    font-family: $main_text
+
+.header__left_link
+    padding-left: 20px
+    color: $color_text
+    font-family: $main_text
+    cursor: pointer
+    font-size: 24px
+    font-weight: 300
+
+
+.header__title
+    font-family: $main_text
+    font-size: 36px
+    color: $color_text
+    z-index: -1
+
+.header__right
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 21%
+
+.header__form
+    display: flex
+    align-items: center
+    margin-right: 10px
+
+.header__form_btn
+    outline: none
+    border: none
+    height: 38px
+    width: 45px
+    background: $white
+    border-bottom-left-radius: 14px
+    border-top-left-radius: 14px
+    padding-right: 10px
+    padding-left: 10px
+    padding-top: 5px
+    border-right: 2px solid $color_special
+    cursor: pointer
+    
+
+.header__form_input
+    width: 300px
+    height: 38px
+    border: 2px solid #FFFFFF
+    outline: none
+    border-top-right-radius: 14px
+    border-bottom-right-radius: 14px
+    padding-left: 10px
+    font-family: $main_text
+
+.header__right_title
+    color: $color_text
+    font-size: 22px
+    font-family: $main_text
+    font-weight: 300
+
+a.svg
+    position: relative
+    display: inline-block
+    margin-bottom: -5px
+
+a.svg:after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+.header__register
+    min-width: 90px
+    height: 40px
+    font-family: $main_text
+    font-size: 24px
+    border-radius: 9px
+    border: 2px solid $color_dedicated
+    background: transparent
+    cursor: pointer
+    color: $color_text
+    margin-left : 20px
+    &:hover
+        border: 2px solid $color_special
+        transition: 0.3s
+
+@media screen and (max-width: 427px)
+    .header__left > object
+        display: none
+
+@media screen and (max-width: 475px)
+    a.svg.logo
+        display: none
+
+@media screen and (max-width: 420px)
+    .header__right_title
+        display: none
+
+// main
+
+.main
+    padding: 9em 0
+    text-align: center
+
+.main__title
+    font-family: $main_text
+    font-weight: 300
+    color: $color_text
+    font-size: 85px
+
+.main__text
+    font-family: $main_text
+    font-weight: 300
+    color: $color_text
+    font-size: 24px
+    max-width: 700px
+    margin: 0 auto
+    line-height: 36px
+
+.btn__block
+    margin-top: 20px
+
+.btn
+    height: 80px
+    padding-left: 40px
+    padding-right: 40px
+    text-align: center
+    font-family: $main_text
+    color: #A0A0A0
+    font-weight: 300
+    font-size: 25px
+    border-radius: 36px
+    background: transparent
+    outline: none
+    border: 6px solid transparent
+    position: relative
+    &:last-child
+        margin-left: 30px
+    &:last-child
+        margin-right: 0
+    &:active
+        transform: translateY(3px)
+    &::after, &::before
+        border-radius: 36px
+    &:hover
+        background-color: transparent
+        box-shadow: none
+        color: #000
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: 3px solid #A0A0A0
+        transition: opacity 0.3s, border 0.3s 
+    &:hover::before
+        opacity: 0
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: transparent
+        border: 3px solid $color_special
+        opacity: 0
+        z-index: 4
+        transform: scaleX(1.1) scaleY(1.3)
+        transition: transform 0.3s, opacity 0.3s
+    &:hover::after
+        opacity: 1
+        transform: scaleX(1) scaleY(1)
+
+@media screen and (max-width: 504px)
+    .btn__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        & > .btn:last-child
+            margin-left: 0
+            margin-top: 10px
+
+@media screen and (max-width: 416px)
+    .main__title
+        font-size: 15vw
+    .main__text
+        font-size: 6vw

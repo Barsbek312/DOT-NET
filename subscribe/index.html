@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normailze.css">
+    <link rel="stylesheet" href="css/style.css" id="theme-link">
+    <title>DOT-NET</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container container__header">
+            <div class="header__left">
+                <a href="#" class="svg logo">
+                    <object type="image/svg+xml" data="images/DOT-NOTE new logo Trancparent with dark 2.svg">
+                        <img src="images/DOT-NOTE new logo Trancparent with dark 2.png" alt="image format png"/>
+                    </object> 
+                </a>
+                <h3 class="header__left_title">DOT-NET<span class="header__left_text">Digital Online Topics</span></h3>
+            </div>
+            <div class="header__right">
+                <a href=""><h4 class="header__right_title">*UserName*</h4></a>
+                <a href="#" class="svg">
+                    <object type="image/svg+xml" data="images/Avatar.svg">
+                        <img src="images/Avatar.png" alt="image format png"/>
+                    </object>
+                </a> 
+                <button id="theme-button" class="header__register"></button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container container__main">
+            <div class="payment__options">
+                <h1 class="main__title">Подписки</h1>
+                <ul class="payment__options_list">
+                    <li class="payment__options_item">
+                        <div class="payment__options_block">
+                            <h3 class="payment__options_title">10 Sub</h3>
+                            <p class="payment__options_text">Подписка на 10 определенных статей по любой теме. Подойдет для первого использования или для тех кто хочет получить достоверную информацию для своих исследований и статей.</p>
+                            <ul class="payment__options_sublist">
+                                <li class="options__sublist_item">10 выбранных статей</li>
+                                <li class="options__sublist_item">Доступ на 30 дней</li>
+                            </ul>
+                            <span class="payment__options_price"><strong>120</strong>сом/мес.</span>
+                            <button class="payment__options_btn">Next</button>
+                        </div>
+                    </li>
+                    <li class="payment__options_item">
+                        <div class="payment__options_block">
+                            <h3 class="payment__options_title">ThemeSub</h3>
+                            <p class="payment__options_text">Подписка на все статьи по теме. 
+                                Идеально походит для тех, кто хочет повысить свою квалификацию и расширить кругозор. Также подойдет тем, кто планирует изучить новую тему или специальность. </p>
+                            <ul class="payment__options_sublist">
+                                <li class="options__sublist_item">Все статьи по выбранной теме</li>
+                                <li class="options__sublist_item">Доступ на 30 дней</li>
+                            </ul>
+                            <span class="payment__options_price"><strong>400</strong>сом/мес.</span>
+                            <button class="payment__options_btn">Next</button>
+                        </div>
+                    </li>
+                    <li class="payment__options_item">
+                        <div class="payment__options_block">
+                            <h3 class="payment__options_title">GrandSub</h3>
+                            <p class="payment__options_text last_text">Подписка на абсолютно все статьи платформы. Для тех, кто не хочет   иметь какие либо рамки в обучении и саморазвитии. Вам будут доступны абсолютно все статьи на сайте. </p>
+                            <ul class="payment__options_sublist last__list">
+                                <li class="options__sublist_item last__item">Все статьи платформы</li>
+                                <li class="options__sublist_item last__item">Доступ на 30 дней</li>
+                            </ul>
+                            <span class="payment__options_price"><strong>1850</strong>сом/мес.</span>
+                            <button class="payment__options_btn">Next</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment__block">
+                <div class="payment__left">
+                    <form class="credit-card">
+                        <h4 class="form__title">Привязка банковской карты</h4>
+                        <div class="form-body">
+                            <!-- Card Number -->
+                            <label class="form__label" for="card">Номер карты</label>
+                            <input type="text" class="card-number" placeholder="0000 - 0000 - 0000 - 0000">
+                            <!-- Date Field -->
+                            <label for="time-hint" class="form__label">Срок годности</label>
+                            <div class="date-field">
+                                <div class="time">
+                                    <div class="month">
+                                        <select name="Month">
+                                            <option value="january">January</option>
+                                            <option value="february">February</option>
+                                            <option value="march">March</option>
+                                            <option value="april">April</option>
+                                            <option value="may">May</option>
+                                            <option value="june">June</option>
+                                            <option value="july">July</option>
+                                            <option value="august">August</option>
+                                            <option value="september">September</option>
+                                            <option value="october">October</option>
+                                            <option value="november">November</option>
+                                            <option value="december">December</option>
+                                        </select>
+                                    </div>
+                                    <span class="line">/</span>
+                                    <div class="year">
+                                        <select name="Year">
+                                            <option value="2016">2016</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="card-verification">
+                                    <p>Три цифры на обороте карты</p>
+                                    <input class="cvv-input" type="text" placeholder="CVV">
+                                </div>
+                            </div>
+                            <!-- Card Verification Field -->
+                            <!-- Buttons -->
+                            <button type="submit" class="proceed-btn">Next</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="payment__right">
+                    <object class="qr-kod" type="image/svg+xml" data="images/photo_2022-03-18_18-49-09 1.svg" width="380" height="380">
+                        <img src="images/photo_2022-03-18_18-49-09 1.png" alt="qr-kod" class="payment__right_img">
+                    </object>
+                    <h3 class="payment__right_title">Оплатить по QR-коду</h3>
+                    <p class="payment__warning">Обязательно укажите в сообщении свою почту!</p>
+                </div>
+            </div>
+            <div class="optionally__block">
+                <h3 class="optionally__title">Дополнительно</h3>
+                <p class="optionally__text">Главная цель нашей платформы - продвижение качественной и понятной науки в массы, поэтому есть система выкупа. Система выкупа статей заключается в том, что автор статьи может выставить опредеенную сумму, при накоплении которой, статья становится опткрытой для всех пользователей сайта. Те кто оплатил часть выкупа и позволил статье стать еще более полезной обществу, станут в таблице “Прометей” в начале статьи.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item"><a class="svg icon" href="#">
+                <object class="social__logo" type="image/svg+xml" data="images/instagram.svg">
+                    <img src="images/instagram.png" alt="instagram" class="payment__right_img">
+                </object>
+            </a></li>
+            <li class="footer__item second__item"><a href="#" class="svg icon">
+                <object class="social__logo" type="image/svg+xml" data="images/Group 81.svg">
+                    <img src="images/Group 81.png" alt="email" class="payment__right_img">
+                </object>
+            </a></li>
+            <li class="footer__item third__item"><a href="#" class="svg icon">
+                <object class="social__logo" type="image/svg+xml" data="images/Group 97.svg">
+                    <img src="images/Group 97.png" alt="tg" class="payment__right_img">
+                </object></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

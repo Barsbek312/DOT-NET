@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oswald&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Montserrat+Alternates&family=Oswald:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #dee6ed;
+  border-bottom: 3px #939eae solid;
+  position: fixed;
+  width: 100%;
+}
+
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left_title {
+  font-size: 34px;
+  color: #464a4e;
+  font-family: "Oswald", sans-serif;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header__left_text {
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+}
+
+.header__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: #464a4e;
+  z-index: -1;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__register {
+  margin-left: 20px;
+  width: 90px;
+  height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  border-radius: 9px;
+  border: 2px solid #939eae;
+  background: transparent;
+  cursor: pointer;
+  color: #464a4e;
+}
+
+.header__register:hover {
+  border: 2px solid #ff9900;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main {
+  height: 100vh;
+  padding-top: 4em;
+}
+
+.container__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.registration {
+  border: 5px solid #ff9900;
+  border-radius: 65px;
+  height: 645px;
+}
+
+.registration__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 48px;
+  margin-top: 30px;
+}
+
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  alling-items: center;
+  padding: 0 25px;
+}
+
+.registration__form > label {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.registration__form > input {
+  max-width: 375px;
+  height: 50px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  border: 2px solid #000;
+  font-family: "Oswald", sans-serif;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.registration__btns {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.registration__btn {
+  font-size: 29px;
+  width: 171px;
+  height: 72px;
+  border-radius: 36px;
+  border: 6px solid transparent;
+  outline: none;
+  background: transparent;
+  color: #A0A0A0;
+  margin-right: 30px;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  -webkit-transition: color 0.5s, background-color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.5s, background-color 0.2s, -webkit-transform 0.2s;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s, -webkit-transform 0.2s;
+}
+
+.registration__btn:last-child {
+  margin-right: 0;
+}
+
+.registration__btn:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.registration__btn::after, .registration__btn::before {
+  border-radius: 36px;
+}
+
+.registration__btn:hover {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #000;
+}
+
+.registration__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #A0A0A0;
+  -webkit-transition: opacity 0.3s, border 0.3s;
+  transition: opacity 0.3s, border 0.3s;
+}
+
+.registration__btn:hover::before {
+  opacity: 0;
+}
+
+.registration__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 3px solid #ff9900;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transform: scaleX(1.1) scaleY(1.3);
+          transform: scaleX(1.1) scaleY(1.3);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+
+.registration__btn:hover::after {
+  opacity: 1;
+  -webkit-transform: scaleX(1) scaleY(1);
+          transform: scaleX(1) scaleY(1);
+}
+
+.text__block {
+  max-width: 700px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  height: 100%;
+  height: 645px;
+}
+
+.main__title {
+  font-size: 120px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.main__text {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 36px;
+  line-height: 53px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1230px) {
+  .main {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .container__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 3em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .registration {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-bottom: 80px;
+    margin-top: 50px;
+  }
+  .text__block {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main__title {
+    font-size: 17vw;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .registration {
+    border: none;
+  }
+  .registration__form > label {
+    padding-left: 35px;
+  }
+  .registration__form > input {
+    margin-left: 35px;
+  }
+  .registration__btns {
+    margin-left: 30px;
+  }
+  .header__title {
+    display: none;
+  }
+  .main__text {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .registration__btns {
+    text-align: center;
+  }
+  .registration__btn {
+    margin-right: 0;
+    margin-top: 30px;
+  }
+  .registration__btn:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .registration__form {
+    padding-left: 0;
+  }
+  .registration {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .header__left_title {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
